@@ -6,4 +6,5 @@ app_name = 'core'
 
 urlpatternss = [
     path('', views.index, name='index'),
+     path('contact/', views.contact, name='contact'),
 ]
