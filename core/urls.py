@@ -4,7 +4,7 @@ from . import views
 
 app_name = 'core'
 
-urlpatternss = [
+urlpatterns = [
     path('', views.index, name='index'),
      path('contact/', views.contact, name='contact'),
 ]
