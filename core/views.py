@@ -19,4 +19,6 @@ def contact(request):
 def signup(request):
     form = SignupForm()
 
-    return render(request)
+    return render(request, 'core/signup.html', {
+        'form': form
+    })
