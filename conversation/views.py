@@ -74,18 +74,4 @@ def detail(request, pk):
         'form': form
     })
 
-@login_required
-def make_phone_call(request):
-    client = Client(settings.TWILIO_ACCOUNT_SID, settings.TWILIO_AUTH_TOKEN)
-    call = client.calls.create(
-        to='PHONE_NUMBER_TO_CALL',  # The recipient's phone number
-        from_='YOUR_TWILIO_PHONE_NUMBER',  # Your Twilio phone number
-        url='https://your-app.com/voice.xml'  # TwiML URL for call instructions
-    )
-
-@login_required
-def voice_response(request):
-    response = VoiceResponse()
-    response.say("Hello, this is a verification of your number.")
-    return HttpResponse(str(response), content_type='text/xml')
     
