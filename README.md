@@ -1,4 +1,4 @@
-Online Marketing Platform
+## Online Marketing Platform
 
 Online Marketing Platform is a Django-based web application that allows users to buy and sell items after registering.
 
